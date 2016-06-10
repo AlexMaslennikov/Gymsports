@@ -1,0 +1,194 @@
+/*
+------------------------------------
+            Mediaqueries
+------------------------------------
+*/
+
+@media (min-width: 990px) {
+    .hamburger {
+        display: none;
+    }
+    .navigation-slide {
+        display: none;
+    }
+    .trainers .arrow-left {
+        left: 20px;
+    }
+    .trainers .arrow-right {
+        right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .trainers .arrow-left {
+        left: 0;
+    }
+    .trainers .arrow-right {
+        right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .trainers-block {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .classes {
+        max-width: 355px;
+    }
+    .classes::after {
+        display: none;
+    }
+    .events {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .blog-wrapper {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .trainers {
+        padding-bottom: 20px;
+    }
+    .trainers .arrow-left {
+        left: 20px;
+    }
+    .trainers .arrow-right {
+        right: 20px;
+    }
+    .partner-wrapper {
+        max-width: 530px;
+        margin: 0 auto;
+    }
+    .partner-item:nth-child(3),
+    .partner-item:nth-child(6) {
+        margin-right: 30px;
+    }
+    .twitter-block .col-xs-12 {
+        text-align: center;
+    }
+    .signup {
+        margin-bottom: 30px;
+    }
+    .signup input[type='email'] {
+        max-width: 250px;
+    }
+    .signup,
+    .footer-descr {
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .hamburger {
+        display: block;
+    }
+    .navigation-slide {
+        display: none;
+    }
+    .info-descr {
+        padding-top: 20px;
+    }
+    .live-item {
+        margin-bottom: 30px;
+    }
+    .classes {
+        margin: 0 auto;
+        padding: 0 20px 18px 20px;
+    }
+    .classes .td-left {
+        width: 150px;
+    }
+    .classes .td-right {
+        width: 160px;
+    }
+    .trainers-block {
+        padding: 30px 17px 25px 17px;
+    }
+    .blog-wrapper {
+        padding: 12px 10px;
+    }
+    .partner-wrapper {
+        margin: 0 auto;
+    }
+    .info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .trainers-block {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .prices-block {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .trainers-events-blog {
+        padding-bottom: 30px;
+    }
+    .trainers {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+    .gallery {
+        max-width: 750px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .live-block {
+        padding-bottom: 0;
+    }
+    .classes-prices {
+        padding-bottom: 30px;
+    }
+    .prices {
+        padding-top: 20px;
+    }
+    .blog {
+        padding-top: 20px;
+    }
+    .gallery-partner {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .blog-wrapper {
+        max-width: 430px;
+        margin: 0 auto;
+    }
+    .blog-right {
+        width: 325px;
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px) {
+    .classes {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .trainers .carousel-inner {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .events {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .blog-wrapper {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .info-descr {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .live-block {
+        padding-bottom: 20px;
+    }
+}
