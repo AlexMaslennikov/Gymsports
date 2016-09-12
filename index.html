@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/media.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
 </head>
@@ -101,7 +101,7 @@
                             <li><a href="#">Contacts</a></li>
                         </ul>
                     </nav> -->
-          <div class="hamburger col-sm-1 col-xs-1 pull-right">
+          <div class="hamburger col-sm-1 col-xs-2 pull-right">
             <a data-toggle="collapse" href="#collapse1" class="hamburger-btn"><i class="fa fa-bars"></i></a>
           </div>
         </div>
@@ -113,9 +113,9 @@
                     <li class="list-group-item"><a href="#">About</a></li>
                     <li class="list-group-item"><a href="#collapse2" data-toggle="collapse">Trainers</a>
                         <ul id="collapse2" class="list-group panel-collapse collapse">
-                            <li class="list-group-item">Cardio fitness</li>
-                            <li class="list-group-item">Pilates</li>
-                            <li class="list-group-item">Aerobics</li>
+                            <li class="list-group-item"><a href="#">Cardio fitness</a></li>
+                            <li class="list-group-item"><a href="#">Pilates</a></li>
+                            <li class="list-group-item"><a href="#">Aerobics</a></li>
                         </ul>
                     </li>
                     <li class="list-group-item"><a href="#">Classes</a></li>
@@ -487,16 +487,12 @@
                       <div class="item-inner"><img src="img/item6.jpg" alt=""></div>
                     </div>
                     <div class="item">
-                      <div class="item-top">
                         <div class="item-inner"><img src="img/item7.jpg" alt=""></div>
                         <div class="item-inner"><img src="img/item8.jpg" alt=""></div>
                         <div class="item-inner"><img src="img/item9.jpg" alt=""></div>
-                      </div>
-                      <div class="item-bottom">
                         <div class="item-inner"><img src="img/item10.jpg" alt=""></div>
                         <div class="item-inner"><img src="img/item11.jpg" alt=""></div>
                         <div class="item-inner"><img src="img/item12.jpg" alt=""></div>
-                      </div>
                     </div>
                   </div>
                   <a class="carousel-control left" href="#myCarousel-gallery" data-slide="prev">
@@ -627,6 +623,7 @@
           </div>
         </div>
       </div>
+      <a href="#" id="back-top" class="arrow-up" onclick="return up()"></a>
     </div>
     <div class="footer-sub">
       <div class="container">
@@ -654,6 +651,22 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/script.js"></script>
+  <script>
+    function up() {  
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+if(top > 0) {  
+  window.scrollBy(0,((top+100)/-10));  
+  t = setTimeout('up()',20);  
+} else clearTimeout(t);  
+return false;  
+}
+jQuery(function(f){
+    var element = f('#back-top');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](250);           
+    });
+});
+  </script>
 </body>
 
 </html>

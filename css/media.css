@@ -28,6 +28,16 @@
     }
 }
 
+@media (max-width: 630px) {
+    .gallery .arrow-left,
+    .gallery .arrow-right {
+        top: 37%;
+    }
+    .map-table {
+        right: 12%;
+    }
+}
+
 @media (max-width: 767px) {
     .trainers-block {
         width: 350px;
@@ -57,13 +67,13 @@
         right: 20px;
     }
     .partner-wrapper {
-        max-width: 530px;
+        max-width: 470px;
         margin: 0 auto;
     }
-    .partner-item:nth-child(3),
-    .partner-item:nth-child(6) {
-        margin-right: 30px;
-    }
+    // .partner-item:nth-child(3),
+    // .partner-item:nth-child(6) {
+    //     margin-right: 30px;
+    // }
     .twitter-block .col-xs-12 {
         text-align: center;
     }
@@ -152,6 +162,15 @@
     }
     .gallery-partner {
         padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 524px) and (max-width: 1199px) {
+    .partner-item:nth-child(2n) {
+        margin-right: 30px;
+    }
+    .partner-item:nth-child(3n) {
+        margin-right: 0;
     }
 }
 
